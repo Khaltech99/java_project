@@ -31,4 +31,5 @@ document.querySelector(".row").addEventListener("click", function() {
     document.querySelector(".question").textContent = "?";
     document.querySelector(".highscore--num").value = "0";
     document.querySelector(".scored").textContent = "20";
+    document.querySelector(".input").value = "";
 });
