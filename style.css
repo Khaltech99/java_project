@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    color: white;
+}
+
+body {
+    background-color: #000;
+    margin-top: 1rem;
+}
+
+.header {
+    align-items: center;
+    border-bottom: 5px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 1rem 0 1rem;
+    position: relative;
+}
+
+.header__top {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.range {
+    align-self: flex-start;
+    margin-top: 0;
+}
+
+.btn {
+    border-radius: 15px;
+    width: 100px;
+}
+
+.btn--primary {
+    padding: 1rem;
+    margin-top: 1rem;
+    font-weight: 900;
+}
+
+.btn--primary:active {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn--secondary {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    padding: 1.2rem;
+}
+
+.guess {
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+}
+
+.btn--border {
+    align-items: center;
+    background-color: white;
+    bottom: -25px;
+    color: black;
+    display: flex;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    height: 50px;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    width: 50px;
+}
+
+.content__body {
+    align-content: center;
+    align-items: center;
+    color: #fff;
+    display: grid;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    gap: 0 30px;
+    justify-content: center;
+    justify-items: center;
+    padding: 0 7rem 0 7rem;
+}
+
+.grid-2x2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 5rem auto;
+}
+
+.input {
+    background-color: black;
+    border: 0;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 3;
+    outline: 0;
+    padding-left: 1rem;
+    width: 15rem;
+}
+
+.input,
+.correct,
+.input__check,
+.scores {
+    justify-self: stretch;
+    align-self: auto;
+}
+
+@media screen and (min-width:768px) {
+    .content__body {
+        align-items: center;
+        justify-content: center;
+        margin: 5rem auto;
+        padding: 0;
+    }
+    .input,
+    .correct,
+    .input__check,
+    .scores {
+        align-self: center;
+        justify-self: center;
+        white-space: nowrap;
+    }
+}
